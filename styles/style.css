@@ -1,0 +1,184 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+	font-family: 'Open Sans', sans-serif;
+  line-height: 1.25;
+}
+
+body {
+}
+
+/* web page */
+/* web page / background image */
+.background {
+  background-image: url("../images/background-blue-gradient.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* web page / bootstrap */
+
+.container {
+  margin: 0 auto;
+  min-width: 960px;
+}
+
+.row {
+    display: flex;
+}
+
+.col-2 {
+	width: 16.666666666666664%;
+  padding: 0 1rem;
+}
+
+.col-3 {
+	width: 25.00%;
+  padding: 0 1rem;
+}
+
+.col-4 {
+	width: 33.33333333333333%;
+  padding: 0 1rem;
+}
+
+.col-5 {
+	width: 41.666666666666664%;
+  padding: 0 1rem;
+}
+
+.col-6 {
+	width: 50.00%;
+  padding: 0 1rem;
+}
+
+.col-9 {
+	width: 75.00%;
+	padding: 0 1rem;
+}
+
+.col-12 {
+	width: 100.00%;
+	padding: 0 1rem;
+}
+
+.push-3 {
+  margin-left: 25%;
+}
+
+.push-6 {
+  margin-left: 50%;
+}
+
+
+/* header */
+header {
+  z-index: 3;
+}
+
+.header-container {
+  background: white;
+}
+
+/* header / top bar */
+.bar-top {
+  align-items: center;
+  display: flex;
+  padding: .25rem 2rem 1rem 2rem;
+  justify-content: space-between;
+}
+
+/* header / top bar / contact links */
+.links-contact > a {
+  color: #DCDCDC;
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.links-contact > a:hover {
+  color: #EE7070;
+}
+
+/* header / top bar / social links */
+.links-social img {
+  height: 20px;
+}
+
+.links-social > a {
+  opacity: 0.1;
+  padding: 0 0.2rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.links-social > a:hover {
+  opacity: 1;
+}
+
+/* header / main bar */
+.bar-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem 1rem 2rem;
+  align-items: flex-end;
+}
+
+.bar-main img {
+  height: 90px;
+}
+
+.links-nav > a {
+  color: #414141;
+  display: inline-block;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  padding: 0 1rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.links-nav > a:hover {
+  color: #EE7070;
+}
+
+/* main */
+/* main / strip */
+.strip1-container {
+  height: 630px;
+}
+.strip2-container {
+}
+
+.specs-container h2 {
+  color: #414141;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.specs-container h3 {
+  color: #EE7070;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.specs-container p {
+  color: #414141;
+  font-size: .9rem;
+  font-weight: 400;
+  text-align: justify;
+}
