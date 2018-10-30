@@ -76,7 +76,7 @@ header {
 .header-main {
   background: white;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-  /* DEBUG: Shadow doesn't work if image or color is set in .header-sub */
+  /* DEBUG: header shadow doesn't work if image or color is set in .header-sub */
 }
 
 /* header / main / top bar */
@@ -236,9 +236,9 @@ header {
   font-size: 1.25rem;
   font-weight: 400;
   letter-spacing: 1px;
-  text-align: center;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
+  text-align: center;
 }
 
 .specs h6 {
@@ -257,5 +257,24 @@ header {
   letter-spacing: -1px;
   font-weight: 400;
   line-height: 1.6;
+  padding-bottom: 1.5rem;
   text-align: justify;
+}
+
+.specs a {
+  background-color: #DCDCDC;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
+  color: #414141;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 0.2rem 1rem;
+  text-align: center;
+  /* DEBUG: buttons aligned left despite above setting */
+  text-decoration: none;
+  transition: all 0.3s linear 0s;
+}
+
+.specs a:hover {
+  color: #EE7070;
 }
