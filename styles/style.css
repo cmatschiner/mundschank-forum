@@ -13,17 +13,7 @@ html {
 body {
 }
 
-/* web page */
-/* web page / background image */
-.background {
-  background-image: url("../images/background-blue-gradient.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-/* web page / bootstrap */
-
+/* bootstrap */
 .container {
   margin: 0 auto;
   min-width: 960px;
@@ -82,19 +72,22 @@ header {
   z-index: 3;
 }
 
-.header-container {
+/* header / main */
+.header-main {
   background: white;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  /* DEBUG: Shadow doesn't work if image or color is set in .header-sub */
 }
 
-/* header / top bar */
+/* header / main / top bar */
 .bar-top {
   align-items: center;
   display: flex;
-  padding: .25rem 2rem 1rem 2rem;
+  padding: .5rem 2rem 0.5rem 2rem;
   justify-content: space-between;
 }
 
-/* header / top bar / contact links */
+/* header / main / top bar / contact links */
 .links-contact > a {
   color: #DCDCDC;
   display: inline-block;
@@ -109,7 +102,7 @@ header {
   color: #EE7070;
 }
 
-/* header / top bar / social links */
+/* header / main / top bar / social links */
 .links-social img {
   height: 20px;
 }
@@ -125,60 +118,144 @@ header {
   opacity: 1;
 }
 
-/* header / main bar */
+/* header / main / main bar */
 .bar-main {
   display: flex;
   justify-content: space-between;
-  padding: 0 2rem 1rem 2rem;
+  padding: 0 2rem 1.5rem 2rem;
   align-items: flex-end;
 }
 
+/* header / main / main bar / logo */
 .bar-main img {
   height: 90px;
 }
 
-.links-nav > a {
+/* header / main / main bar / nav links */
+.links-nav a:nth-child(-n+6) {
   color: #414141;
   display: inline-block;
   font-size: 0.9375rem;
   font-weight: 400;
-  padding: 0 1rem;
+  padding: 0 .85rem;
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 0.3s linear 0s;
 }
 
-.links-nav > a:hover {
+.links-nav a:last-child {
+  background-color: #EE7070;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
+  color: white;
+  display: inline-block;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  padding: 0.35rem 1rem;
+  text-decoration: none;
+  transition: all 0.3s linear 0s;
+}
+
+.links-nav a:hover, a:active {
   color: #EE7070;
 }
 
-/* main */
-/* main / strip */
-.strip1-container {
-  height: 630px;
-}
-.strip2-container {
+.links-nav a:hover:last-child {
+  color: #414141;
 }
 
-.specs-container h2 {
+/* header / sub */
+
+.row-sh {
+  display: flex;
+  justify-content: center;
+}
+
+.row-sh div {
+  height: 170px;
+  width: 860px;
+}
+
+.row-sh > div {
+  display:flex;
+  padding-top: 4.5rem;
+}
+
+#row1 > div {
+  justify-content: flex-start;
+}
+
+#row2 > div {
+  justify-content: flex-end;
+}
+
+#row3 > div {
+  justify-content: center;
+}
+
+.header-sub {
+  background-image: url("../images/background-blue-gradient.jpg");
+  height: 630px;
+}
+
+.header-sub h2 {
+  color: white;
+  font-size: 5.5rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  padding: 0 0.5rem 0 0.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.header-sub h3 {
+  color: #EE7070;
+  font-family: 'Leckerli One', cursive;
+  font-size: 9rem;
+  margin-top: -0.5rem;
+  padding: 0 0 0 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.header-sub h4 {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 14px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.specs hr {
+  display: block;
+  border-color: #414141;
+  border-style: inset;
+  border-width: 0.5px;
+  margin: 0 3.5rem;
+}
+
+.specs h5 {
   color: #414141;
   font-size: 1.25rem;
   font-weight: 400;
+  letter-spacing: 1px;
   text-align: center;
+  padding-top: 0.5rem;
   padding-bottom: 1rem;
 }
 
-.specs-container h3 {
+.specs h6 {
   color: #EE7070;
   font-size: 2.5rem;
-  font-weight: 600;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
   text-align: center;
 }
 
-.specs-container p {
+.specs p {
   color: #414141;
-  font-size: .9rem;
+  font-size: .9375rem;
+  letter-spacing: -1px;
   font-weight: 400;
+  line-height: 1.6;
   text-align: justify;
 }

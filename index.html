@@ -9,29 +9,30 @@
 	<!-- Meta / Responsive viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!--Links / CSS -->
-	<link rel="stylesheet" href="styles/style.css" type="text/css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" type="text/css">
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-	<div>
-		<!-- header -->
-		<header>
+	<header>
+		<div class="container">
 
-			<div class="container header-container">
-
-				<!-- header / top bar -->
+			<!-- header / main -->
+			<div class=" header-main">
 				<div class="container">
+
+					<!-- header / main / top bar -->
 					<div class="bar-top">
-						<!-- header / top bar / contact links -->
+						<!-- header / main / contact links -->
 						<div class="links-contact">
-							<a href="#gmaps">A: Kirchengasse 13&sol;7 &verbar; A-1070 Wien</a>
-							<a href="#cell">M: &plus;43 &lpar;0&rpar; 650 56 666 56</a>
-							<a href="#mail">E: office&commat;mundschank.com</a>
+							<a href="#gmaps">Kirchengasse 13&sol;7 &verbar; A-1070 Wien</a>
+							<a href="#cell">&plus;43 &lpar;0&rpar; 650 56 666 56</a>
+							<a href="#mail">office&commat;mundschank.com</a>
 							<a href="#contact">Kontakt</a>
 						</div>
-						<!-- header / top bar /  social links -->
+						<!-- header / main / top bar /  social links -->
 						<div class="links-social">
 							<a href="#facebook">
 								<img src="./images/icon-facebook.png" alt="">
@@ -45,57 +46,95 @@
 						</div>
 					</div>
 
-					<!-- header / main bar -->
+					<!-- header / main / main bar -->
 					<div class="container">
 						<div class="bar-main">
+							<!-- header / main / main bar / logo -->
 							<div class="logo-mundschank">
 								<a href="/">
-									<img src="./images/logo-mundschank.png"/>
+									<img src="./images/logo-mundschank-forum.png" />
 								</a>
 							</div>
-
-							<!-- header / navigation bar -->
+							<!-- header / main / main bar / nav links -->
 							<div class="links-nav">
-								<a href="#concept">Das Konzept</a>
-								<a href="#mission">Über uns</a>
-								<a href="#mission">Über uns</a>
+								<a href="/">Startseite</a>
+								<a href="#services">Angebot</a>
+								<a href="#usp">Mehrtwert</a>
+								<a href="#about">Über uns</a>
+								<a href="#blog">Blog</a>
+								<a href="#forum">Forum</a>
+								<a href="#newsletter">Newsletter</a>
 							</div>
 						</div>
-		</header>
+					</div>
+				</div>
+			</div>
 
+			<!-- header / sub -->
+			<div class="header-sub">
+				<div class="container">
 
-		<!-- main page -->
-		<!-- main page / strip 1: subheader -->
-		<div class="container strip1-container background">
+					<!-- header / sub / row 1-->
+					<div class="row-sh" id="row1">
+						<div>
+							<h2>MARKTPLATZ</h2>
+							<h3>&</h3>
+						</div>
+					</div>
+					<div class="row-sh" id="row2">
+						<div>
+							<h2>WERKSTATT</h2>
+						</div>
+					</div>
+					<div class="row-sh" id="row3">
+						<div>
+							<h4>FÜR GASTRO-EXPERTEN</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		</div>
-		<!-- main page / strip 2: specs, text & links -->
-		<div class="container strip2-container background">
+	</header>
 
-		</div>
-		<main>
-			<!-- main page / specs -->
-			<div class="container specs-container">
+
+	<main>
+		<!-- main page / specs -->
+		<div class="container">
+			<div class="specs" id="services">
+				<!-- main page / specs / -->
 				<div class="row">
 					<div class="col-4">
-						<h3>500 qm</h3>
+						<h6>500 qm</h6>
 					</div>
 					<div class="col-4">
-						<h3>100 %</h3>
+						<h6>100 %</h6>
 					</div>
 					<div class="col-4">
-						<h3>50 plus</h3>
+						<h6>50 plus</h6>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-4">
-						<h2>GESAMTFL&Auml;CHE</h2>
+						<hr>
 					</div>
 					<div class="col-4">
-						<h2>ANPASSBAR</h2>
+						<hr>
 					</div>
 					<div class="col-4">
-						<h2>PARTNER</h2>
+						<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<h5>GESAMTFL&Auml;CHE</h5>
+					</div>
+					<div class="col-4">
+						<h5>ANPASSBAR</h5>
+					</div>
+					<div class="col-4">
+						<h5>PARTNER</h5>
 					</div>
 				</div>
 				<div class="row">
@@ -109,16 +148,27 @@
 						<p>Die enge Zusammenarbeit mit unseren Partnern, sowie ständiges Lernen von und mit einander sind die zwei wichtigsten Eckpfeiler unseres langfristigen Erfolges.</p>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-4">
+						<hr>
+					</div>
+					<div class="col-4">
+						<hr>
+					</div>
+					<div class="col-4">
+						<hr>
+					</div>
+				</div>
 			</div>
-			<!-- main page / specs -->
-			<!-- header / top bar / contact links -->
-		</main>
+		</div>
+		<!-- main page / specs -->
+		<!-- header / top bar / contact links -->
+	</main>
 
-		<!-- sidebar -->
-		<aside>
-		</aside>
+	<!-- sidebar -->
+	<aside>
+	</aside>
 
-	</div>
 
 </body>
 
