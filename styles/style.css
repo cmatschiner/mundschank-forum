@@ -16,7 +16,7 @@ body {
 /* bootstrap */
 .container {
   margin: 0 auto;
-  min-width: 960px;
+  max-width: 960px;
 }
 
 .row {
@@ -25,37 +25,52 @@ body {
 
 .col-2 {
 	width: 16.666666666666664%;
-  padding: 0 1rem;
+	padding: 0 0.5rem;
 }
 
 .col-3 {
 	width: 25.00%;
-  padding: 0 1rem;
+	padding: 0 0.5rem;
 }
 
 .col-4 {
 	width: 33.33333333333333%;
-  padding: 0 1rem;
+	padding: 0 0.5rem;
 }
 
 .col-5 {
 	width: 41.666666666666664%;
-  padding: 0 1rem;
+	padding: 0 0.5rem;
 }
 
 .col-6 {
 	width: 50.00%;
-  padding: 0 1rem;
+	padding: 0 0.5rem;
+}
+
+.col-7 {
+	width: 58.33333333333333%;
+	padding: 0 0.5rem;
+}
+
+.col-8 {
+	width: 66.666666666666664%%;
+	padding: 0 0.5rem;
 }
 
 .col-9 {
 	width: 75.00%;
-	padding: 0 1rem;
+	padding: 0 0.5rem;
+}
+
+.col-10 {
+	width: 83.33333333333333%%;
+	padding: 0 0.5rem;
 }
 
 .col-12 {
 	width: 100.00%;
-	padding: 0 1rem;
+	padding: 0 0.5rem;
 }
 
 .push-3 {
@@ -68,15 +83,13 @@ body {
 
 
 /* header */
-header {
-  z-index: 3;
-}
-
 /* header / main */
 .header-main {
   background: white;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-  /* DEBUG: header shadow doesn't work if image or color is set in .header-sub */
+  margin: 0;
+  position: relative;
+  z-index: 1;
 }
 
 /* header / main / top bar */
@@ -90,7 +103,6 @@ header {
 /* header / main / top bar / contact links */
 .links-contact > a {
   color: #DCDCDC;
-  display: inline-block;
   font-size: 0.875rem;
   font-weight: 400;
   padding: 8px 16px;
@@ -120,10 +132,10 @@ header {
 
 /* header / main / main bar */
 .bar-main {
+  align-items: flex-end;
   display: flex;
   justify-content: space-between;
   padding: 0 2rem 1.5rem 2rem;
-  align-items: flex-end;
 }
 
 /* header / main / main bar / logo */
@@ -134,7 +146,6 @@ header {
 /* header / main / main bar / nav links */
 .links-nav a:nth-child(-n+6) {
   color: #414141;
-  display: inline-block; /* QUESTION: why necessary? no conflicts with flex-conatiner? */
   font-size: 0.9375rem;
   font-weight: 400;
   padding: 0 .85rem;
@@ -147,7 +158,6 @@ header {
   border-radius: 25px;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
   color: white;
-  display: inline-block;
   font-size: 0.9375rem;
   font-weight: 400;
   padding: 0.35rem 1rem;
@@ -164,103 +174,80 @@ header {
 }
 
 /* header / sub */
-
-.row-sh {
-  display: flex;
-  justify-content: center;
-}
-
-.row-sh div {
-  height: 170px;
-  width: 860px;
-}
-
-.row-sh > div {
-  display:flex;
-  padding-top: 4.5rem;
-}
-
-#row1 > div {
-  justify-content: flex-start;
-}
-
-#row2 > div {
-  justify-content: flex-end;
-}
-
-#row3 > div {
-  justify-content: center;
-}
-
 .header-sub {
   background-image: url("../images/background-blue-gradient.jpg");
   height: 630px;
+  padding: 0 3rem;
+  text-align: right;
 }
 
 .header-sub h2 {
   color: white;
   font-size: 5.5rem;
   font-weight: 700;
-  letter-spacing: 5px;
-  padding: 0 0.5rem 0 0.5rem;
+  letter-spacing: 9px;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+}
+
+.header-sub h2 span {
+  color: #EE7070;
+  display: inline-block;
+  font-family: 'Leckerli One', cursive;
+  font-size: 9rem;
+  padding: 0 3rem 0 3rem;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .header-sub h3 {
-  color: #EE7070;
-  font-family: 'Leckerli One', cursive;
-  font-size: 9rem;
-  margin-top: -0.5rem;
-  padding: 0 0 0 3rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-}
-
-.header-sub h4 {
   color: white;
   font-size: 3.2rem;
   font-weight: 700;
   letter-spacing: 14px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
 }
 
-.specs hr {
-  border-color: #414141;
-  border-style: inset;
-  border-width: 0.5px;
-  margin: 0 3.5rem;
+.specs {
+  background-color: white;
+  padding: 2rem 0 2rem 0;
+  text-align: center;
 }
-
-.specs h5 {
+/* main page */
+/* main page / specs */
+.specs h4 {
   color: #414141;
   font-size: 1.25rem;
   font-weight: 400;
   letter-spacing: 1px;
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
-  text-align: center;
+  text-transform: uppercase;
 }
 
-.specs h6 {
-  background-color: yellow;
+.specs h4 span {
   color: #EE7070;
+  display: block;
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 3px;
-  padding-top: 1rem;
   padding-bottom: 0.5rem;
-  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-bottom: 1px solid #414141;
+  text-transform: none;
 }
 
 .specs p {
-  background-color: grey;
   color: #414141;
   font-size: .9375rem;
   letter-spacing: -1px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   font-weight: 400;
   line-height: 1.6;
-  padding: 0 1rem 1.5rem 1rem;
-  text-align: justify;
-/* QUESTION: how can I fix the column width despite bootstrap? */
+  max-width: 40em;
 }
 
 .specs a {
@@ -271,11 +258,28 @@ header {
   font-size: 0.875rem;
   font-weight: 400;
   padding: 0.2rem 1rem;
-  text-align: center;
   text-decoration: none;
   transition: all 0.3s linear 0s;
 }
 
 .specs a:hover {
   color: #EE7070;
+}
+
+/* main page / quote */
+.strip-quote img {
+  height: 100%;
+}
+
+.strip-quote ul {
+  list-style-type: none;
+}
+
+.strip-quote li:nth-child(-n+2) {
+color: red;
+}
+
+.bkg-dop {
+  background-color: black;
+  margin: 0 -1rem;
 }
