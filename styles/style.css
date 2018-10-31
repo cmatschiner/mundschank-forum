@@ -90,7 +90,6 @@ header {
 /* header / main / top bar / contact links */
 .links-contact > a {
   color: #DCDCDC;
-  display: inline-block;
   font-size: 0.875rem;
   font-weight: 400;
   padding: 8px 16px;
@@ -134,7 +133,6 @@ header {
 /* header / main / main bar / nav links */
 .links-nav a:nth-child(-n+6) {
   color: #414141;
-  display: inline-block; /* QUESTION: why necessary? no conflicts with flex-conatiner? */
   font-size: 0.9375rem;
   font-weight: 400;
   padding: 0 .85rem;
@@ -147,7 +145,6 @@ header {
   border-radius: 25px;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
   color: white;
-  display: inline-block;
   font-size: 0.9375rem;
   font-weight: 400;
   padding: 0.35rem 1rem;
@@ -228,6 +225,7 @@ header {
   border-style: inset;
   border-width: 0.5px;
   margin: 0 3.5rem;
+  /* QUESTION: how can define a fixed line length? */
 }
 
 .specs h5 {
@@ -241,7 +239,6 @@ header {
 }
 
 .specs h6 {
-  background-color: yellow;
   color: #EE7070;
   font-size: 2.5rem;
   font-weight: 700;
@@ -252,7 +249,6 @@ header {
 }
 
 .specs p {
-  background-color: grey;
   color: #414141;
   font-size: .9375rem;
   letter-spacing: -1px;
@@ -260,7 +256,7 @@ header {
   line-height: 1.6;
   padding: 0 1rem 1.5rem 1rem;
   text-align: justify;
-/* QUESTION: how can I fix the column width despite bootstrap? */
+/* QUESTION: how can I fix the col-4 width to 320px despite bootstrap to get a better optical result in +960px wide viewports for the text? */
 }
 
 .specs a {
@@ -272,6 +268,7 @@ header {
   font-weight: 400;
   padding: 0.2rem 1rem;
   text-align: center;
+/* QUESTION: why aren't the <a>s centered within col-4? */
   text-decoration: none;
   transition: all 0.3s linear 0s;
 }
