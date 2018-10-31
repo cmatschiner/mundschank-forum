@@ -134,7 +134,7 @@ header {
 /* header / main / main bar / nav links */
 .links-nav a:nth-child(-n+6) {
   color: #414141;
-  display: inline-block;
+  display: inline-block; /* QUESTION: why necessary? no conflicts with flex-conatiner? */
   font-size: 0.9375rem;
   font-weight: 400;
   padding: 0 .85rem;
@@ -224,7 +224,6 @@ header {
 }
 
 .specs hr {
-  display: block;
   border-color: #414141;
   border-style: inset;
   border-width: 0.5px;
@@ -242,6 +241,7 @@ header {
 }
 
 .specs h6 {
+  background-color: yellow;
   color: #EE7070;
   font-size: 2.5rem;
   font-weight: 700;
@@ -252,13 +252,15 @@ header {
 }
 
 .specs p {
+  background-color: grey;
   color: #414141;
   font-size: .9375rem;
   letter-spacing: -1px;
   font-weight: 400;
   line-height: 1.6;
-  padding-bottom: 1.5rem;
+  padding: 0 1rem 1.5rem 1rem;
   text-align: justify;
+/* QUESTION: how can I fix the column width despite bootstrap? */
 }
 
 .specs a {
@@ -270,7 +272,6 @@ header {
   font-weight: 400;
   padding: 0.2rem 1rem;
   text-align: center;
-  /* DEBUG: buttons aligned left despite above setting */
   text-decoration: none;
   transition: all 0.3s linear 0s;
 }
