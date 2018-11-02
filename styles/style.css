@@ -11,12 +11,13 @@ html {
 }
 
 body {
+  background: url("../images/background01-blue.jpg") no-repeat fixed;
 }
 
 /* bootstrap */
 .container {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 980px;
 }
 
 .row {
@@ -75,6 +76,10 @@ body {
 
 .push-3 {
   margin-left: 25%;
+}
+
+.push-4 {
+  margin-left: 33.33333333333333%;
 }
 
 .push-6 {
@@ -175,7 +180,6 @@ body {
 
 /* header / sub */
 .header-sub {
-  background-image: url("../images/background-blue-gradient.jpg");
   height: 630px;
   padding: 0 3rem;
   text-align: right;
@@ -266,20 +270,95 @@ body {
   color: #EE7070;
 }
 
-/* main page / quote */
-.strip-quote img {
-  height: 100%;
+/* main page / strip: quote 1 */
+.rem-colpadding {
+  padding: 0;
+  /* QUESTION: is this a best practice method of removing the padding? neccesary for image in col-5 */
 }
 
-.strip-quote ul {
-  list-style-type: none;
-}
-
-.strip-quote li:nth-child(-n+2) {
-color: red;
-}
-
-.bkg-dop {
+.strip-quote {
   background-color: black;
-  margin: 0 -1rem;
+  text-align: center;
+}
+
+.strip-quote q {
+  color: white;
+  font-family: 'Noticia Text', serif;
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.strip-quote p {
+  color: white;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+  padding-top: 2rem;
+}
+
+.strip-quote span {
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.strip-quote img {
+  object-fit: scale-down;
+  width: 100%;
+  /* QUESTION: how can I fit the image inside the col-5 conatiner so that its height is inherited from the p-element in col-7? */
+}
+
+/* main page / services */
+.services {
+  background-color: white;
+  padding: 2rem 0 2rem 0;
+  text-align: center;
+}
+
+.services img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
+.services p {
+  color: #414141;;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.services span {
+  display: block;
+}
+
+.small img {
+  background-color: yellow;
+}
+
+/* footer */
+.footer-main {
+  background-color: white;
+  color: #414141;
+  display: flex;
+  font-size: 0.875rem;
+  font-weight: 400;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.footer-main p {
+}
+
+.footer-main a {
+  color: #414141;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer-main a:hover {
+  color: #EE7070;
 }
