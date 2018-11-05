@@ -12,7 +12,7 @@ html {
 
 /* body */
 body {
-  background: url("../images/background01-blue.jpg") no-repeat fixed;
+  background: url("../images/background01-blue.jpg") no-repeat fixed center top;
 }
 
 /* body / general */
@@ -70,7 +70,7 @@ body {
 }
 
 .col-8 {
-	width: 66.666666666666664%%;
+	width: 66.666666666666664%;
 	padding: 0 1rem;
 }
 
@@ -80,7 +80,7 @@ body {
 }
 
 .col-10 {
-	width: 83.33333333333333%%;
+	width: 83.33333333333333%;
 	padding: 0 1rem;
 }
 
@@ -107,7 +107,7 @@ body {
   background: white;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   margin: 0;
-  position: relative;
+  position: fixed;
   z-index: 1;
 }
 
@@ -342,7 +342,6 @@ body {
 
 .services span {
   display: block;
-  /* QUESTION: How can I add line break / padding  */
 }
 
 .figure-center {
