@@ -25,7 +25,7 @@
 				<div class="container">
 
 					<!-- header / main / top bar -->
-					<div class="bar-top">
+					<div class="bar-top flex">
 						<!-- header / main / contact links -->
 						<div class="links-contact">
 							<a href="#gmaps">Kirchengasse 13&sol;7 &verbar; A-1070 Wien</a>
@@ -49,7 +49,7 @@
 
 					<!-- header / main / main bar -->
 					<div class="container">
-						<div class="bar-main">
+						<div class="bar-main flex">
 							<!-- header / main / main bar / logo -->
 							<div class="logo-mundschank">
 								<a href="/">
@@ -124,33 +124,35 @@
 			</div>
 		</div>
 
-		<!-- main page / serices-->
+		<!-- main page / services-->
 		<div class="container">
 			<div class="services">
-				<!-- QUESTION: not sure if this is the optimal solution for structuring below content? -->
-				<!-- QUESTION: how can I change the sizes of the figures 02-05 to the left and right of figure 01 in the center? -->
+				<div class="row">
+					<div class="col-12">
+						<p>Hier eine Übersicht unseres <span><strong>Produkt- und Leistungsangebots</strong>:</span></p>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col-4">
 						<a href="#popup-plattform">
-							<img src="./images/figure05-mundschank.png" alt="">
+							<img src="./images/figure05-mundschank.png" class="figure-sides" alt="">
 						</a>
 						<p><strong>Generieren</strong> Sie neue Synergien <span>durch einen vertieften Dialog </span><span>mit Experten, Partnern </span><span>und Fachleuten</span></p>
 						<a href="#popup-werkstatt">
-							<img src="./images/figure04-mundschank.png" alt="">
+							<img src="./images/figure04-mundschank.png"  class="figure-sides" alt="">
 						</a>
 						<p><strong>Profitieren</strong> <span>Sie von einer</span><span>optimalen Infrastruktur</span><span>für die Evaluierung von Ideen</span><span>und Schulung von Mitarbeitern</span></p>
 					</div>
-					<div class="col-4 rem-colpadding">
-						<p>Hier eine Übersicht unseres <span><strong>Produkt- und Leistungsangebots</strong>:</span></p>
-						<img src="./images/figure01-mundschank.png" alt="">
+					<div class="col-4 centered rem-colpadding">
+						<img src="./images/figure01-mundschank.png" class="figure-center" alt="">
 					</div>
 					<div class="col-4">
-						<img src="./images/figure02-mundschank.png" alt="">
-						<p><strong>Ergänzen</strong> Sie Ihren bestehenden Produktvertrieb und -vermarktung mit unseren innovativen B2B-Angeboten</p>
+						<img src="./images/figure02-mundschank.png" class="figure-sides" alt="">
+						<p><span><strong>Ergänzen</strong> Sie Ihren bestehenden </span>Produktvertrieb und -vermarktung <span>mit unseren innovativen</span> B2B-Angeboten</p>
 						<a href="#popup-markt">
-							<img src="./images/figure03-mundschank.png" alt="">
+							<img src="./images/figure03-mundschank.png"  class="figure-sides" alt="">
 						</a>
-						<p><strong>Begeistern</strong> Sie Ihre Stakeholder mit dynamischen Events und interaktiven Workshops die wirklich in Erinnerung bleiben</p>
+						<p><span><strong>Begeistern</strong></span><span>Sie Ihre Stakeholder <span>mit dynamischen Events</span> und interaktiven Workshops </span><span>die wirklich in Erinnerung bleiben</span></p>
 					</div>
 				</div>
 			</div>
@@ -164,7 +166,7 @@
 
 	<footer>
 		<div class="container">
-			<div class="footer-main">
+			<div class="footer-main flex">
 				<div>
 					<p>Copyright 2018 Mundschank Operations</p>
 				</div>

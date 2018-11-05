@@ -20,6 +20,10 @@ body {
   max-width: 980px;
 }
 
+.flex {
+  display: flex;
+}
+
 .row {
     display: flex;
 }
@@ -100,7 +104,6 @@ body {
 /* header / main / top bar */
 .bar-top {
   align-items: center;
-  display: flex;
   padding: .5rem 2rem 0.5rem 2rem;
   justify-content: space-between;
 }
@@ -138,7 +141,6 @@ body {
 /* header / main / main bar */
 .bar-main {
   align-items: flex-end;
-  display: flex;
   justify-content: space-between;
   padding: 0 2rem 1.5rem 2rem;
 }
@@ -313,14 +315,12 @@ body {
 /* main page / services */
 .services {
   background-color: white;
-  padding: 2rem 0 2rem 0;
+  padding: 2rem 0 0 0;
   text-align: center;
 }
 
 .services img {
   object-fit: contain;
-  object-position: center;
-  width: 100%;
 }
 
 .services p {
@@ -328,21 +328,30 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
+  padding: 1rem 0 2rem 0;
 }
 
 .services span {
   display: block;
 }
 
-.small img {
-  background-color: yellow;
+.figure-center {
+  width: 100%;
+  /* QUESTION: how can center and oversize image correctly? */
+}
+
+.centered {
+  margin: auto auto;
+
+}
+.figure-sides {
+  height: 80px;
 }
 
 /* footer */
 .footer-main {
   background-color: white;
   color: #414141;
-  display: flex;
   font-size: 0.875rem;
   font-weight: 400;
   justify-content: space-between;
