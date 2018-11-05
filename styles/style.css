@@ -10,11 +10,22 @@ html {
   line-height: 1.25;
 }
 
+/* body */
 body {
   background: url("../images/background01-blue.jpg") no-repeat fixed;
 }
 
-/* bootstrap */
+/* body / general */
+
+.centered-all {
+  margin: auto auto;
+}
+
+.centered-vert {
+  margin: auto 0;
+}
+
+/* body / bootstrap */
 .container {
   margin: 0 auto;
   max-width: 980px;
@@ -30,52 +41,52 @@ body {
 
 .col-2 {
 	width: 16.666666666666664%;
-	padding: 0 0.5rem;
+	padding: 0 1rem;
 }
 
 .col-3 {
 	width: 25.00%;
-	padding: 0 0.5rem;
+	padding: 0 1rem;
 }
 
 .col-4 {
 	width: 33.33333333333333%;
-	padding: 0 0.5rem;
+	padding: 0 1rem;
 }
 
 .col-5 {
 	width: 41.666666666666664%;
-	padding: 0 0.5rem;
+	padding: 0 1rem;
 }
 
 .col-6 {
 	width: 50.00%;
-	padding: 0 0.5rem;
+	padding: 0 1rem;
 }
 
 .col-7 {
 	width: 58.33333333333333%;
-	padding: 0 0.5rem;
+	padding: 0 1rem;
 }
 
 .col-8 {
 	width: 66.666666666666664%%;
-	padding: 0 0.5rem;
+	padding: 0 1rem;
 }
 
 .col-9 {
 	width: 75.00%;
-	padding: 0 0.5rem;
+	padding: 0 1rem;
 }
 
 .col-10 {
 	width: 83.33333333333333%%;
-	padding: 0 0.5rem;
+	padding: 0 1rem;
 }
 
 .col-12 {
 	width: 100.00%;
-	padding: 0 0.5rem;
+	padding: 0 1rem;
 }
 
 .push-3 {
@@ -89,7 +100,6 @@ body {
 .push-6 {
   margin-left: 50%;
 }
-
 
 /* header */
 /* header / main */
@@ -280,6 +290,7 @@ body {
 
 .strip-quote {
   background-color: black;
+  height: 270px;
   text-align: center;
 }
 
@@ -298,18 +309,16 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
-  padding-top: 2rem;
 }
 
 .strip-quote span {
   display: block;
-  padding-bottom: 2rem;
 }
 
 .strip-quote img {
-  object-fit: scale-down;
-  width: 100%;
-  /* QUESTION: how can I fit the image inside the col-5 conatiner so that its height is inherited from the p-element in col-7? */
+  height: 270px;
+  object-fit: cover;
+  max-width: 100%;
 }
 
 /* main page / services */
@@ -333,6 +342,7 @@ body {
 
 .services span {
   display: block;
+  /* QUESTION: How can I add line break / padding  */
 }
 
 .figure-center {
@@ -340,12 +350,109 @@ body {
   /* QUESTION: how can center and oversize image correctly? */
 }
 
-.centered {
-  margin: auto auto;
-
-}
 .figure-sides {
   height: 80px;
+}
+
+/* main page / usps */
+.usps {
+  background-color: white;
+  padding: 2rem 0 2rem 0;
+  text-align: center;
+}
+
+.usps h5 {
+  color: #EE7070;;
+  font-size: .9375rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.usps p {
+  color: #414141;;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 1rem 0 1rem 0;
+}
+
+.usps a {
+  background-color: #DCDCDC;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
+  color: #414141;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 0.2rem 1rem;
+  text-decoration: none;
+  transition: all 0.3s linear 0s;
+}
+
+.usps a:hover {
+  color: #EE7070;
+}
+
+.usps img {
+  height: 320px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* main page / team */
+.team {
+  background-color: white;
+  padding: 2rem 0 2rem 0;
+  text-align: left;
+}
+
+.team h5 {
+  color: #EE7070;;
+  font-size: .9375rem;
+  font-weight: 600;
+  line-height: 1.6;
+  padding-bottom: 1rem;
+}
+
+.team h6 {
+  color: #414141;;
+  font-size: .9375rem;
+  font-weight: 600;
+  line-height: 1.6;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.team p {
+  color: #414141;;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 0 0 1rem 0;
+}
+
+.team span {
+  display: block;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.team img {
+  height: 230px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.team a {
+  color: #414141;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.team a:hover {
+  color: #EE7070;
 }
 
 /* footer */
