@@ -1,479 +1,411 @@
 * {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-	font-family: 'Open Sans', sans-serif;
-  line-height: 1.25;
+	font: 16px/1.25 'Open Sans', sans-serif;
 }
 
 /* body */
 body {
-  background: url("../images/background01-blue.jpg") no-repeat fixed center top;
+	background-color: white;
 }
 
 /* body / general */
-
 .centered-all {
-  margin: auto auto;
+	margin: auto auto;
 }
 
-.centered-vert {
-  margin: auto 0;
+.centered-ver {
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 /* body / bootstrap */
-.container {
-  margin: 0 auto;
-  max-width: 980px;
-}
-
 .flex {
-  display: flex;
-}
-
-.row {
-    display: flex;
-}
-
-.col-2 {
-	width: 16.666666666666664%;
-	padding: 0 1rem;
-}
-
-.col-3 {
-	width: 25.00%;
-	padding: 0 1rem;
-}
-
-.col-4 {
-	width: 33.33333333333333%;
-	padding: 0 1rem;
-}
-
-.col-5 {
-	width: 41.666666666666664%;
-	padding: 0 1rem;
-}
-
-.col-6 {
-	width: 50.00%;
-	padding: 0 1rem;
-}
-
-.col-7 {
-	width: 58.33333333333333%;
-	padding: 0 1rem;
-}
-
-.col-8 {
-	width: 66.666666666666664%;
-	padding: 0 1rem;
-}
-
-.col-9 {
-	width: 75.00%;
-	padding: 0 1rem;
-}
-
-.col-10 {
-	width: 83.33333333333333%;
-	padding: 0 1rem;
-}
-
-.col-12 {
-	width: 100.00%;
-	padding: 0 1rem;
-}
-
-.push-3 {
-  margin-left: 25%;
-}
-
-.push-4 {
-  margin-left: 33.33333333333333%;
-}
-
-.push-6 {
-  margin-left: 50%;
+	display: flex;
 }
 
 /* header */
 /* header / main */
 .header-main {
-  background: white;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-  margin: 0;
-  position: fixed;
-  z-index: 1;
+	background: #D37C7C;
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+	position: sticky;
+	top: 0px;
 }
 
 /* header / main / top bar */
 .bar-top {
-  align-items: center;
-  padding: .5rem 2rem 0.5rem 2rem;
-  justify-content: space-between;
+	align-items: center;
+	padding: .5rem 2rem 0.5rem 2rem;
+	justify-content: space-between;
 }
 
 /* header / main / top bar / contact links */
-.links-contact > a {
-  color: #DCDCDC;
-  font-size: 0.875rem;
-  font-weight: 400;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: all 0.3s;
+.links-contact>a {
+	color: white;
+	font-size: 0.875rem;
+	font-weight: 400;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: all 0.3s;
 }
 
-.links-contact > a:hover {
-  color: #EE7070;
+.links-contact>a:hover {
+	color: #414141;
 }
 
 /* header / main / top bar / social links */
+/* DEBUG: recode using external icon library  */
 .links-social img {
-  height: 20px;
+	height: 20px;
 }
 
-.links-social > a {
-  opacity: 0.1;
-  padding: 0 0.2rem;
-  text-decoration: none;
-  transition: all 0.3s;
+.links-social>a {
+	color: white;
+	padding: 0 0.5rem;
+	text-decoration: none;
+	font-size: 1rem;
+	transition: all 0.3s;
 }
 
-.links-social > a:hover {
-  opacity: 1;
+.links-social>a:hover {
+	color: #414141;
+	text-decoration: none;
 }
 
 /* header / main / main bar */
 .bar-main {
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 0 2rem 1.5rem 2rem;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 0 2rem 1.5rem 2rem;
 }
 
 /* header / main / main bar / logo */
 .bar-main img {
-  height: 90px;
+	height: 100px;
 }
 
 /* header / main / main bar / nav links */
-.links-nav a:nth-child(-n+6) {
-  color: #414141;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  padding: 0 .85rem;
-  text-decoration: none;
-  transition: all 0.3s linear 0s;
+.links-nav a {
+	color: white;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	padding: 0 .85rem;
+	text-decoration: none;
+	transition: all 0.3s linear 0s;
 }
 
-.links-nav a:last-child {
-  background-color: #EE7070;
-  border-radius: 25px;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
-  color: white;
-  font-size: 0.9375rem;
-  font-weight: 400;
-  padding: 0.35rem 1rem;
-  text-decoration: none;
-  transition: all 0.3s linear 0s;
+.links-nav a:hover {
+	color: #414141;
+	text-decoration: none;
 }
 
-.links-nav a:hover, a:active {
-  color: #EE7070;
+.links-nav a:active {
+	color: #414141;
 }
 
+/* QUESTION: how can I highlight link that is currently activated? */
 .links-nav a:hover:last-child {
-  color: #414141;
+	color: #414141;
 }
 
 /* header / sub */
 .header-sub {
-  height: 630px;
-  padding: 0 3rem;
-  text-align: right;
+	background: url("../images/background01-blue.jpg") no-repeat fixed center top;
+	height: 630px;
+	padding: 0 3rem;
+	text-align: right;
 }
 
 .header-sub h2 {
-  color: white;
-  font-size: 5.5rem;
-  font-weight: 700;
-  letter-spacing: 9px;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-  text-transform: uppercase;
+	color: white;
+	font-size: 5.5rem;
+	font-weight: 700;
+	letter-spacing: 9px;
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+	text-transform: uppercase;
 }
 
 .header-sub h2 span {
-  color: #EE7070;
-  display: inline-block;
-  font-family: 'Leckerli One', cursive;
-  font-size: 9rem;
-  padding: 0 3rem 0 3rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+	color: #EE7070;
+	display: inline-block;
+	font-family: 'Leckerli One', cursive;
+	font-size: 9rem;
+	padding: 0 3rem 0 3rem;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .header-sub h3 {
-  color: white;
-  font-size: 3.2rem;
-  font-weight: 700;
-  letter-spacing: 14px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-  text-transform: uppercase;
+	color: white;
+	font-size: 3.2rem;
+	font-weight: 700;
+	letter-spacing: 14px;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+	text-transform: uppercase;
 }
 
 .specs {
-  background-color: white;
-  padding: 2rem 0 2rem 0;
-  text-align: center;
+	background-color: white;
+	padding-bottom: 2rem;
+	text-align: center;
 }
+
 /* main page */
 /* main page / specs */
 .specs h4 {
-  color: #414141;
-  font-size: 1.25rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+	color: #414141;
+	font-size: 1.25rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-top: 2rem;
+	text-transform: uppercase;
 }
 
 .specs h4 span {
-  color: #EE7070;
-  display: block;
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: 3px;
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-left: 1em;
-  margin-right: 1em;
-  border-bottom: 1px solid #414141;
-  text-transform: none;
+	color: #EE7070;
+	display: block;
+	font-size: 2.5rem;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-transform: none;
+}
+
+/* NOTE: Trick to define border width. Source: https://www.steckinsights.com/shorten-length-border-bottom-pure-css/ */
+.specs h4 span:after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 180px;
+	padding-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
+	border-bottom: 1px solid #414141;
 }
 
 .specs p {
-  color: #414141;
-  font-size: .9375rem;
-  letter-spacing: -1px;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  font-weight: 400;
-  line-height: 1.6;
-  max-width: 40em;
+	color: #414141;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	line-height: 1.6;
+	max-width: 40em;
 }
 
 .specs a {
-  background-color: #DCDCDC;
-  border-radius: 25px;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
-  color: #414141;
-  font-size: 0.875rem;
-  font-weight: 400;
-  padding: 0.2rem 1rem;
-  text-decoration: none;
-  transition: all 0.3s linear 0s;
+	background-color: #DCDCDC;
+	border-radius: 25px;
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
+	color: #414141;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	padding: 0.2rem 1rem;
+	text-decoration: none;
+	transition: all 0.3s linear 0s;
 }
 
 .specs a:hover {
-  color: #EE7070;
+	color: #EE7070;
 }
 
 /* main page / strip: quote 1 */
-.rem-colpadding {
-  padding: 0;
-  /* QUESTION: is this a best practice method of removing the padding? neccesary for image in col-5 */
-}
 
 .strip-quote {
-  background-color: black;
-  height: 270px;
-  text-align: center;
+	background-color: black;
+	text-align: center;
 }
 
-.strip-quote q {
-  color: white;
-  font-family: 'Noticia Text', serif;
-  font-size: 1.125rem;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 1.6;
+.strip-quote ul {
+	color: white;
+	font-family: 'Noticia Text', serif;
+	font-size: 1.125rem;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 1.6;
 }
 
-.strip-quote p {
-  color: white;
-  font-size: 0.9375rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.6;
+.strip-quote ul:last-child {
+	color: white;
+  font-family: 'Open Sans', sans-serif;
+	font-size: 0.9375rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.6;
+  padding-top: .5rem;
 }
 
 .strip-quote span {
-  display: block;
+	display: block;
 }
 
 .strip-quote img {
-  height: 270px;
-  object-fit: cover;
-  max-width: 100%;
+	object-fit: cover;
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+	height: 300px;
 }
 
 /* main page / services */
 .services {
-  background-color: white;
-  padding: 2rem 0 0 0;
-  text-align: center;
+	background-color: white;
+	padding: 2rem 0 0 0;
+	position: relative;
+	text-align: center;
 }
 
 .services img {
-  object-fit: contain;
+	object-fit: contain;
 }
 
 .services p {
-  color: #414141;;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.6;
-  padding: 1rem 0 2rem 0;
+	color: #414141;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.6;
+	padding: 1rem 0 1rem 0;
 }
 
 .services span {
-  display: block;
+	display: block;
 }
 
 .figure-center {
-  width: 100%;
-  /* QUESTION: how can center and oversize image correctly? */
+	max-width: 350px;
+	padding-bottom: 2rem;
+	width: 100%;
 }
 
 .figure-sides {
-  height: 80px;
+	height: 80px;
 }
 
 /* main page / usps */
 .usps {
-  background-color: white;
-  padding: 2rem 0 2rem 0;
-  text-align: center;
+	background-color: white;
+	padding: 2rem 0 2rem 0;
+	text-align: center;
 }
 
 .usps h5 {
-  color: #EE7070;;
-  font-size: .9375rem;
-  font-weight: 600;
-  line-height: 1.6;
+	color: #EE7070;
+	;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.6;
 }
 
 .usps p {
-  color: #414141;;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.6;
-  padding: 1rem 0 1rem 0;
+	color: #414141;
+	;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	line-height: 1.6;
+	padding: 1rem 0 1rem 0;
 }
 
 .usps a {
-  background-color: #DCDCDC;
-  border-radius: 25px;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
-  color: #414141;
-  font-size: 0.875rem;
-  font-weight: 400;
-  padding: 0.2rem 1rem;
-  text-decoration: none;
-  transition: all 0.3s linear 0s;
+	background-color: #DCDCDC;
+	border-radius: 25px;
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
+	color: #414141;
+	font-size: 0.875rem;
+	font-weight: 400;
+	padding: 0.2rem 1rem;
+	text-decoration: none;
+	transition: all 0.3s linear 0s;
 }
 
 .usps a:hover {
-  color: #EE7070;
+	color: #EE7070;
 }
 
 .usps img {
-  height: 320px;
-  max-width: 100%;
-  object-fit: cover;
+	height: 320px;
+	max-width: 100%;
+	object-fit: cover;
 }
 
 /* main page / team */
 .team {
-  background-color: white;
-  padding: 2rem 0 2rem 0;
-  text-align: left;
+	background-color: white;
+	padding: 2rem 0 2rem 0;
+	text-align: left;
 }
 
 .team h5 {
-  color: #EE7070;;
-  font-size: .9375rem;
-  font-weight: 600;
-  line-height: 1.6;
-  padding-bottom: 1rem;
+	color: #EE7070;
+	;
+	font-size: .9375rem;
+	font-weight: 600;
+	line-height: 1.6;
 }
 
 .team h6 {
-  color: #414141;;
-  font-size: .9375rem;
-  font-weight: 600;
-  line-height: 1.6;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+	color: #414141;
+	font-size: .9375rem;
+	font-weight: 600;
+	line-height: 1.6;
+	padding-top: 1rem;
 }
 
 .team p {
-  color: #414141;;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.6;
-  padding: 0 0 1rem 0;
+	color: #414141;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.6;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .team span {
-  display: block;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+	display: block;
+	padding-top: 1.1rem;
 }
 
 .team img {
-  height: 230px;
-  max-width: 100%;
-  object-fit: cover;
+	height: 230px;
+	max-width: 100%;
+	padding-top: 1rem;
+	object-fit: cover;
 }
 
 .team a {
-  color: #414141;
-  font-size: 0.875rem;
-  font-weight: 400;
-  text-align: left;
-  text-decoration: none;
-  transition: all 0.3s;
+	color: #414141;
+	font-size: 0.875rem;
+	font-weight: 400;
+	text-align: left;
+	text-decoration: none;
+	transition: all 0.3s;
 }
 
 .team a:hover {
-  color: #EE7070;
+	color: #EE7070;
 }
 
 /* footer */
 .footer-main {
-  background-color: white;
-  color: #414141;
-  font-size: 0.875rem;
-  font-weight: 400;
-  justify-content: space-between;
-  padding: 1rem;
+	background-color: #D37C7C;
+	color: #414141;
+	font-size: 0.875rem;
+	font-weight: 400;
+	justify-content: space-between;
+	padding: 1rem;
 }
 
-.footer-main p {
-}
+.footer-main p {}
 
 .footer-main a {
-  color: #414141;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: all 0.3s;
+	color: #414141;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: all 0.3s;
 }
 
 .footer-main a:hover {
-  color: #EE7070;
+	color: #EE7070;
 }
