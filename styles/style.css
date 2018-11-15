@@ -6,7 +6,7 @@
 }
 
 html {
-	font: 16px/1.25 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 /* body */
@@ -19,10 +19,7 @@ body {
 	margin: auto auto;
 }
 
-.centered-ver {
-	margin-top: auto;
-	margin-bottom: auto;
-}
+/* QUESTION: According to https://getbootstrap.com/docs/4.1/content/reboot/ I should avoid using margin-top. Why and what is my alternative? */
 
 /* header */
 /* header / main */
@@ -211,38 +208,45 @@ body {
 
 .strip-quote {
 	background-color: black;
+	color: #DCDCDC;
 	text-align: center;
 }
 
-.strip-quote ul {
-	color: white;
+.strip-quote blockquote {
 	font-family: 'Noticia Text', serif;
 	font-size: 1.125rem;
 	font-style: italic;
 	font-weight: 400;
 	line-height: 1.6;
 }
-
-.strip-quote ul:last-child {
-	color: white;
-  font-family: 'Open Sans', sans-serif;
+.strip-quote cite {
+	font-family: 'Open Sans', sans-serif;
 	font-size: 0.9375rem;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 1.6;
-  padding-top: .5rem;
 }
 
-.strip-quote span {
-	display: block;
+.strip-img01 {
+	background-image: url('../images/image01-wix.png');
+	background-size: cover;
+	background-position: 50% 50%;
 }
 
-.strip-quote img {
-	object-fit: cover;
-	padding-left: 0;
-	padding-right: 0;
-	width: 100%;
-	height: 300px;
+.strip-img02 {
+	background-image: url('../images/image02-wix.png');
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.strip-img03 {
+	background-image: url('../images/image03-wix.png');
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.quote-all {
+	padding-bottom: 2rem;
+	padding-top: 2rem;
 }
 
 /* main page / services */
