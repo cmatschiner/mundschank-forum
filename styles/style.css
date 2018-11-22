@@ -9,24 +9,11 @@ html {
 	font-family: 'Open Sans', sans-serif;
 }
 
-/* body */
-body {
-	background-color: white;
-}
-
-/* body / general */
-.centered-all {
-	margin: auto auto;
-}
-
-/* QUESTION: According to https://getbootstrap.com/docs/4.1/content/reboot/ I should avoid using margin-top. Why and what is my alternative? */
-
 /* header */
 /* header / main */
 .header-main {
 	background: #D37C7C;
 	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-	position: sticky;
 	top: 0px;
 }
 
@@ -38,26 +25,27 @@ body {
 }
 
 /* header / main / top bar / contact links */
-.links-contact>a {
+
+.links-contact a {
 	color: white;
 	font-size: 0.875rem;
 	font-weight: 400;
 	padding: 8px 16px;
-	text-decoration: none;
 	transition: all 0.3s;
+	text-decoration: none;
 }
 
-.links-contact>a:hover {
+.links-contact a:hover {
 	color: #414141;
+	text-decoration: none;
 }
 
 /* header / main / top bar / social links */
-/* DEBUG: recode using external icon library  */
 .links-social img {
 	height: 20px;
 }
 
-.links-social>a {
+.links-social a {
 	color: white;
 	padding: 0 0.5rem;
 	text-decoration: none;
@@ -65,7 +53,7 @@ body {
 	transition: all 0.3s;
 }
 
-.links-social>a:hover {
+.links-social a:hover {
 	color: #414141;
 	text-decoration: none;
 }
@@ -109,12 +97,10 @@ body {
 /* header / sub */
 .header-sub {
 	background: url("../images/background01-blue.jpg") no-repeat fixed center top;
-	height: 630px;
-	padding: 0 3rem;
-	text-align: right;
 }
 
-.header-sub h2 {
+/* header / sub /subtitle */
+.subtitle h2 {
 	color: white;
 	font-size: 5.5rem;
 	font-weight: 700;
@@ -125,8 +111,8 @@ body {
 	text-transform: uppercase;
 }
 
-.header-sub h2 span {
-	color: #EE7070;
+.subtitle h2 span {
+	color: #D37C7C;
 	display: inline-block;
 	font-family: 'Leckerli One', cursive;
 	font-size: 9rem;
@@ -134,7 +120,7 @@ body {
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-.header-sub h3 {
+.subtitle h3 {
 	color: white;
 	font-size: 3.2rem;
 	font-weight: 700;
@@ -143,14 +129,22 @@ body {
 	text-transform: uppercase;
 }
 
-.specs {
-	background-color: white;
-	padding-bottom: 2rem;
+/* header / sub / slideshow */
+.slideshow {
+	font-size: 1.75rem;
+	font-weight: 400;
+	letter-spacing: 1px;
 	text-align: center;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 /* main page */
 /* main page / specs */
+.specs {
+	background-color: white;
+	padding-bottom: 2rem;
+}
+
 .specs h4 {
 	color: #414141;
 	font-size: 1.25rem;
@@ -161,7 +155,7 @@ body {
 }
 
 .specs h4 span {
-	color: #EE7070;
+	color: #D37C7C;
 	display: block;
 	font-size: 2.5rem;
 	font-weight: 700;
@@ -190,22 +184,19 @@ body {
 
 .specs a {
 	background-color: #DCDCDC;
+	border-width: 0;
 	border-radius: 25px;
 	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
 	color: #414141;
-	font-size: 0.9375rem;
-	font-weight: 400;
-	padding: 0.2rem 1rem;
-	text-decoration: none;
 	transition: all 0.3s linear 0s;
 }
 
 .specs a:hover {
-	color: #EE7070;
+	background-color: #DCDCDC;
+	color: #D37C7C;
 }
 
 /* main page / strip: quote 1 */
-
 .strip-quote {
 	background-color: black;
 	color: #DCDCDC;
@@ -219,6 +210,7 @@ body {
 	font-weight: 400;
 	line-height: 1.6;
 }
+
 .strip-quote cite {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.9375rem;
@@ -254,11 +246,17 @@ body {
 	background-color: white;
 	padding: 2rem 0 0 0;
 	position: relative;
-	text-align: center;
 }
 
 .services img {
 	object-fit: contain;
+}
+
+.services h5 {
+	color: #D37C7C;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.6;
 }
 
 .services p {
@@ -285,22 +283,18 @@ body {
 
 /* main page / usps */
 .usps {
-	background-color: white;
 	padding: 2rem 0 2rem 0;
-	text-align: center;
 }
 
 .usps h5 {
-	color: #EE7070;
-	;
+	color: #D37C7C;
 	font-size: 1rem;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1.6;
 }
 
 .usps p {
 	color: #414141;
-	;
 	font-size: 0.9375rem;
 	font-weight: 400;
 	line-height: 1.6;
@@ -320,7 +314,7 @@ body {
 }
 
 .usps a:hover {
-	color: #EE7070;
+	color: #D37C7C;
 }
 
 .usps img {
@@ -330,81 +324,81 @@ body {
 }
 
 /* main page / team */
-.team {
-	background-color: white;
+.about {
 	padding: 2rem 0 2rem 0;
-	text-align: left;
 }
 
-.team h5 {
-	color: #EE7070;
-	;
+.about img {
+	height: 230px;
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.about h5 {
+	color: #D37C7C;
 	font-size: .9375rem;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1.6;
 }
 
-.team h6 {
+.about h6 {
 	color: #414141;
 	font-size: .9375rem;
 	font-weight: 600;
-	line-height: 1.6;
-	padding-top: 1rem;
 }
 
-.team p {
+.about p {
 	color: #414141;
-	font-size: 0.875rem;
+	font-size: 0.9375rem;
 	font-weight: 400;
 	line-height: 1.6;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
 }
 
-.team span {
+.about span {
 	display: block;
 	padding-top: 1.1rem;
 }
 
-.team img {
-	height: 230px;
-	max-width: 100%;
-	padding-top: 1rem;
-	object-fit: cover;
-}
-
-.team a {
+.about a {
 	color: #414141;
-	font-size: 0.875rem;
+	font-size: 0.9375rem;
 	font-weight: 400;
+	margin-top: 1rem;
 	text-align: left;
 	text-decoration: none;
 	transition: all 0.3s;
 }
 
-.team a:hover {
-	color: #EE7070;
+.about a:hover {
+	color: #D37C7C;
 }
 
 /* footer */
-.footer-main {
+footer {
 	background-color: #D37C7C;
-	color: #414141;
+	color: white;
 	font-size: 0.875rem;
 	font-weight: 400;
-	justify-content: space-between;
-	padding: 1rem;
 }
 
-.footer-main p {}
-
-.footer-main a {
-	color: #414141;
-	padding: 8px 16px;
+footer a {
+	color: white;
+	padding-left: 2rem;
 	text-decoration: none;
 	transition: all 0.3s;
 }
 
-.footer-main a:hover {
-	color: #EE7070;
+footer a:hover {
+	color: #D37C7C;
+}
+
+/* bootstrap modal */
+/* bootstrap modal / contact popup */
+.popup h4  {
+	border-color: white;
+	color: #D37C7C;
+	font-size: 1.6rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
