@@ -29,8 +29,7 @@
 	<header>
 		<!-- header / main -->
 		<div class="container-fluid">
-			<div class="header-main position-sticky">
-				<!-- DEBUG: bootstrap sticky attribute stopped working -->
+			<div class="header-main position-fixed">
 				<div class="container">
 					<!-- header / main / top bar -->
 					<div class="bar-top d-flex">
@@ -39,7 +38,7 @@
 							<a href="https://goo.gl/maps/JNwJAqMaFkE2" target="_blank">Kirchengasse 13&sol;7 &verbar; A-1070 Wien</a>
 							<a href="tel:+436505666656">&plus;43 &lpar;0&rpar; 650 56 666 56</a>
 							<a href="mailto:office@mundschank.com?subject=Mundschank%20Forum">office&commat;mundschank.com</a>
-							<button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#popup-contact">Kontakt</button>
+							<button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#popup-contact">Kontakt</button>
 						</div>
 						<!-- header / main / top bar /  social links -->
 						<div class="links-social">
@@ -60,7 +59,7 @@
 							<!-- header / main / main bar / logo -->
 							<div class="logo-mundschank">
 								<a href="/">
-									<img src="./images/logo-mundschank-forum.png" alt="" />
+									<img src="./images/mundschank-logo.png" alt="" />
 								</a>
 							</div>
 							<!-- header / main / main bar / nav links -->
@@ -91,13 +90,13 @@
 				<div id="slideshow" class="slideshow carousel slide py-5 px-4" data-ride="carousel">
 					<div class="carousel-inner text-white">
 						<div class="carousel-item active">
-							<p class="d-none d-md-block d-lg-block d-xl-block w-100" alt="First slide">Entwickeln, testen, präsentieren und verkaufen Sie Ihre Produkte und Dienstleistungen in den Räumlichkeiten des Mundschank Forums.</p>
+							<p class="d-none d-md-block w-100" alt="First slide">Entwickeln, testen, präsentieren und verkaufen Sie Ihre Produkte und Dienstleistungen in den Räumlichkeiten des Mundschank Forums.</p>
 						</div>
 						<div class="carousel-item">
-							<p class="d-none d-md-block d-lg-block d-xl-block w-100" alt="Second slide">Sparen Sie Kosten, Arbeit und Zeit – mieten Sie unsere Räumlichkeiten und nutzen Sie unsere umfangreichen Dienstleistungsangebote.</p>
+							<p class="d-none d-md-block w-100" alt="Second slide">Sparen Sie Kosten, Arbeit und Zeit – mieten Sie unsere Räumlichkeiten und nutzen Sie unsere umfangreichen Dienstleistungsangebote.</p>
 						</div>
 						<div class="carousel-item">
-							<p class="d-none d-md-block d-lg-block d-xl-block w-100">Profitieren Sie von der Expertise und Netzwerk des Mundschank Forum Teams bei der Planung, Organisation und Umsetzung Ihrer Veranstaltungen.</p>
+							<p class="d-none d-md-block w-100">Profitieren Sie von der Expertise und Netzwerk des Mundschank Forum Teams bei der Planung, Organisation und Umsetzung Ihrer Veranstaltungen.</p>
 						</div>
 					</div>
 				</div>
@@ -113,20 +112,20 @@
 			<div id="services" class="specs text-center" id="angebot">
 				<!-- main page / specs / kpis -->
 				<div class="row justify-content-center">
-					<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="col-12 col-lg-4">
 						<h4><span>500 qm</span>Gesamtfläche</h4>
 						<p>Das Mundschank Forum verfügt über zwei Produktions-/Schauküchen, eine Multifunktionshalle, Seminarräume, eine eigene LKW-Zufahrt und 20 Stellplätze.</p>
-						<a class="btn btn-light btn-sm" href="#grundriss">Erfahren Sie mehr</a>
+						<button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#popup-floorplan">Erfahren Sie mehr</button>
 					</div>
-					<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<h4><span>100 %</span>Anpassbar</h4>
 						<p>Eine smarte Raumplanung und -technik ermöglichen eine rasche und flexible Adaptierung und Ausstattung sämtlicher Räumlichkeiten gemäß Ihren Vorgaben.</p>
-						<a class="btn btn-light btn-sm" href="#adaptierung">Erfahren Sie mehr</a>
+						<button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#popup-adaption">Erfahren Sie mehr</button>
 					</div>
-					<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<h4><span>50 plus</span>Partner</h4>
 						<p>Die enge Zusammenarbeit mit unseren Partnern, sowie ständiges Lernen von und mit einander sind die zwei wichtigsten Eckpfeiler unseres langfristigen Erfolges.</p>
-						<a class="btn btn-light btn-sm" href="#partner">Erfahren Sie mehr</a>
+						<button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#popup-partners">Erfahren Sie mehr</button>
 					</div>
 				</div>
 			</div>
@@ -135,14 +134,14 @@
 		<!-- main page / quote strip 1 -->
 		<div class="container strip-quote text-center">
 			<div class="row">
-				<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-4 px-sm-4 px-md-4 pl-lg-4 quote-all">
+				<div class="col-12 col-lg-6 px-4 quote-all">
 					<blockquote>
 						<p>"Warum nicht die Produkte und Dienstleistungen Ihres Unternehmens noch erfolgreicher und kostengünstiger vertreiben, vermarkten und entwickeln ?</p>
 						<p>Wir helfen Ihnen dabei."</p>
 					</blockquote>
 					<cite> Dipl.-Ing. Christoph Matschiner, MBA & Ing. Andreas Weber<br>Firmengründer</cite>
 				</div>
-				<div class="col-12 col-sm-12 col-md-12 col-lg-6 strip-img01">
+				<div class="col-12 col-lg-6 strip-img01">
 				</div>
 			</div>
 		</div>
@@ -158,22 +157,22 @@
 				<div class="row">
 					<div class="col-sm-12 col-md-6 col-lg-4 order-sm-2 order-md-2 order-lg-first d-none d-md-block d-lg-block">
 						<a href="#popup-plattform">
-							<img src="./images/figure05-mundschank.png" class="figure-sides" alt="">
+							<img src="./images/mundschank-figure05.png" class="figure-sides" alt="">
 						</a>
 						<p><strong>Generieren</strong> Sie neue Synergien <span>durch einen vertieften Dialog </span><span>mit Experten, Partnern </span><span>und Fachleuten</span></p>
 						<a href="#popup-werkstatt">
-							<img src="./images/figure04-mundschank.png" class="figure-sides" alt="">
+							<img src="./images/mundschank-figure04.png" class="figure-sides" alt="">
 						</a>
 						<p><strong>Profitieren</strong> <span>Sie von einer</span><span>optimalen Infrastruktur</span><span>für die Evaluierung von Ideen</span><span>und Schulung von Mitarbeitern</span></p>
 					</div>
-					<div class="col-sm-12 col-md-12 col-lg-4 order-first order-lg-2 centered-all">
-						<img src="./images/figure01-mundschank.png" class="figure-center" alt="">
+					<div class="col-sm-12 col-lg-4 order-first order-lg-2 centered-all">
+						<img src="./images/mundschank-figure01.png" class="figure-center" alt="">
 					</div>
 					<div class="col-sm-12 col-md-6 col-lg-4 order-last d-none d-md-block d-lg-block">
-						<img src="./images/figure02-mundschank.png" class="figure-sides" alt="">
+						<img src="./images/mundschank-figure02.png" class="figure-sides" alt="">
 						<p><span><strong>Ergänzen</strong> Sie Ihren bestehenden </span>Produktvertrieb und -vermarktung <span>mit unseren innovativen</span> B2B-Angeboten</p>
 						<a href="#popup-markt">
-							<img src="./images/figure03-mundschank.png" class="figure-sides" alt="">
+							<img src="./images/mundschank-figure03.png" class="figure-sides" alt="">
 						</a>
 						<p><span><strong>Begeistern</strong></span><span>Sie Ihre Stakeholder <span>mit dynamischen Events</span> und interaktiven Workshops </span><span>die wirklich in Erinnerung bleiben</span></p>
 					</div>
@@ -184,14 +183,14 @@
 		<!-- main page / quote strip 2 -->
 		<div class="container strip-quote text-center">
 			<div class="row">
-				<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-4 px-sm-4 px-md-4 pl-lg-4 quote-all">
+				<div class="col-12 col-lg-6 px-4 quote-all">
 					<blockquote>
 						<p>"Wollen Sie die Bedürfnisse Ihrer Kunden besser verstehen, die Qualität Ihrer Kundenbeziehung nachhaltig stärken, oder Ihr Marketing und Vertrieb pushen ?</p>
 						<p>Wir erstellen ein auf Sie maßgeschneidertes Leistungspaket."</p>
 					</blockquote>
 					<cite> Dipl.-Ing. Christoph Matschiner, MBA<br>Geschäftsführender Gesellschafter</cite>
 				</div>
-				<div class="col-12 col-sm-12 col-md-12 col-lg-6 strip-img02">
+				<div class="col-12 col-lg-6 strip-img02">
 				</div>
 			</div>
 		</div>
@@ -200,30 +199,30 @@
 		<div class="container">
 			<div id="usps" class="usps text-center" id="mehwert">
 				<div class="row">
-					<div class="col-lg-4">
+					<div class="col-12 col-lg-4">
 						<h5>Wollen Sie Ihre Kunden besser verstehen und richtig begeistern ?</h5>
 						<p>Warum nicht aussagekräftige Infos zum Kaufverhalten und -kriterien von Kunden einholen, die intensiv Ihre Produkte ausprobiert haben und unverfälschtes Feedback geben?</p>
-						<img src="./images/image03-wix.png" alt="">
+						<img src="./images/wix-image03.png" alt="">
 						<p>Durch uns erfahren Sie nicht nur über Lob und Kritik zur Handhabung, Ausstattung, Design und Verarbeitung Ihrer Geräte, zur Optik und Geschmack Ihrer Erzeugnisse oder zum Eindruck die Ihre Veranstaltung hinterlassen hat, sondern erfahren
 							was Ihre Zielgruppen wirklich begeistert.</p>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-12 col-lg-4">
 						<h5>Beabsichtigen Sie die Qualität Ihrer Kundenbeziehungen zu stärken ?</h5>
 						<p>Nur wenn sich Ihre Kunden mit Ihrem Unternehmen und Marke emotional verbunden fühlen, von Ihren Produkten begeistert sind, führt dies zu einer starken und dauerhaften Kundenbeziehung.</p>
-						<img src="./images/image04-wix.png" alt="">
+						<img src="./images/wix-image04.png" alt="">
 						<p>Wir unterstützen Sie von A bis Z: Von der Konzeption, Planung und Betreuung Ihrer Veranstaltung über die Bereitstellung von Geräten und Leihpersonals bis hin zur aktiven Umsetzung Ihrer Vertriebs- und Marketingaktivitäten, wir rücken Ihr
 							Unternehmen ins optimale Licht.</p>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-12 col-lg-4">
 						<h5>Suchen Sie nach neuen Möglichkeiten Ihr Marketing und Vertrieb zu pushen ?</h5>
 						<p>Angesicht des steigenden Wettbewerbs ist eine Differenzierung über den Preis/Qualität schwer möglich. Hier setzen wir mit unserem neuartigen Marketing- und Vertriebskonzept an.</p>
-						<img src="./images/image05-wix.png" alt="">
+						<img src="./images/wix-image05.png" alt="">
 						<p>Durch unsere personalisierte Kundenansprache, sowie Möglichkeit sich mit Ihren Produkten aktiv und intensiv auseinanderzusetzen, bauen wir hochqualitative Kundenbeziehungen auf, schaffen echtes Kundenvertrauen
 							und stärken nachhaltig die Kundenbindung.</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-12">
+					<div class="col-12">
 						<a href="#contact">Erfahren Sie mehr</a>
 					</div>
 				</div>
@@ -232,13 +231,13 @@
 			<!-- main page / quote strip 3 -->
 			<div class="container strip-quote text-center">
 				<div class="row">
-					<div class="col-12 col-sm-12 col-md-12 col-lg-6 px-4 px-sm-4 px-md-4 pl-lg-4 quote-all">
+					<div class="col-12 col-lg-6 px-4 quote-all">
 						<blockquote>
 							<p>"Wir wollen unser Event-Marketing- und Vertriebskonzept als ein innovatives und zeitgemäßes B2B-Geschäftsmodell verstanden sehen, das sich ständig weiterentwickelt und unsere Kunden und Partner immer wieder aufs Neue zu begeistern vermag."</p>
 						</blockquote>
 						<cite>Ing. Andreas Weber<br>Geschäftsführender Gesellschafter</cite>
 					</div>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-6 strip-img02">
+					<div class="col-12 col-lg-6 strip-img02">
 					</div>
 				</div>
 			</div>
@@ -247,32 +246,32 @@
 			<div class="container">
 				<div id="about" class="about text-left">
 					<div class="row justify-content-around">
-						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
+						<div class="col-12 col-xl-3">
 							<h5>Unser Leitbild</h5>
 							<p>Die ständige Beobachtung von Entwicklungen und Trends, die Zusammenarbeit und das gemeinsame Lernen von und mit unseren Partnern, sowie Kooperationen mit echter Handschlagqualität bilden die Eckpfeiler unseres Erfolges.<span>Haben wir Ihr
 									Interesse geweckt, sind Sie an einer Kooperation oder Sponsoring interessiert?</span><span>Kontaktieren Sie uns.</span></p>
 						</div>
-						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-9">
+						<div class="col-12 col-xl-9">
 							<h5>Das Kernteam</h5>
 							<div class="row">
 								<div class="card col-12 col-sm-6 col-md-4 col-lg-4 border-0">
-									<img class="card-img-top" src="./images/image07-wix.png" alt="">
+									<img class="card-img-top" src="./images/wix-image07.png" alt="">
 									<div class="card-body px-0">
 										<h6 class="card-title mb-1">Christoph Matschiner</h6>
 										<p class="card-text">Visionär & Macher</p>
 										<a href="mailto:cm@mundschank.com">cm@mundschank.com</a>
 									</div>
 								</div>
-								<div class="card col-12 col-sm-6 col-md-4 col-lg-4 border-0">
-									<img class="card-img-top" src="./images/image08-wix.png" alt="">
+								<div class="card col-12 col-sm-6 col-md-4 border-0">
+									<img class="card-img-top" src="./images/wix-image08.png" alt="">
 									<div class="card-body px-0">
 										<h6 class="card-title mb-1">Andreas Weber</h6>
 										<p class="card-text">Weichensteller & Organisator</p>
 										<a href="mailto:aw@mundschank.com">aw@mundschank.com</a>
 									</div>
 								</div>
-								<div class="card col-12 col-sm-6 col-md-4 col-lg-4 border-0">
-									<img class="card-img-top" src="./images/image09-wix.png" alt="">
+								<div class="card col-12 col-sm-6 col-md-4 border-0">
+									<img class="card-img-top" src="./images/wix-image09.png" alt="">
 									<div class="card-body px-0">
 										<h6 class="card-title mb-1">Joe Wagner</h6>
 										<p class="card-text">Querdenker & Kommunikator</p>
@@ -288,13 +287,12 @@
 	</main>
 
 	<footer>
-		<div class="container pt-3 px-3">
+		<div class="container pt-3">
 			<div class="row justify-content-around">
-				<!-- DEBUG: class "justify-content-..." not working -->
 				<div class="col-4">
 					<p>Copyright 2018 Mundschank Operations</p>
 				</div>
-				<div class="col-8">
+				<div class="col-8 text-right">
 					<a href="#impressum">Impressum</a>
 					<a href="#datenschutz">Datenschutz</a>
 					<a href="#terms">Nutzungsbedingungen</a>
@@ -307,26 +305,93 @@
 
 	<!-- bootstrap modal -->
 	<!-- bootstrap modal / contact popup -->
-	<div class="modal fade" id="popup-contact" tabindex="-1" role="dialog" aria-labelledby="popup-contact-title" aria-hidden="true">
+	<div class="modal fade popup" id="popup-contact" tabindex="-1" role="dialog" aria-labelledby="popup-contact-title" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title" id="popup-contact-title">Kontakt</h4>
+					<!-- QUESTION: Why does the class "popup" override bootstrap's settings for the close icon situated on the top right of the popup window? -->
+					<h4 class="modal-title pl-4" id="popup-contact-title">Kontakt</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-label="close">
 						<span aria-hidden="true">&times;</span>
 				</div>
 				<div class="modal-body">
 					<div class="container-fluid">
 						<div class="row">
-							<div class="col-6">
-								<p>test</p>
+							<!-- bootstrap modal / contact popup / form -->
+							<div class="col-12 col-lg-6">
+								<div class="form-group">
+									<label class="sr-only" for="user-name">InputUserName</label>
+									<input type="text" class="form-control" id="user-name" aria-describedby="nameHelp" placeholder="Vor- & Nachname">
+									<p id="nameHelp" class="sr-only">Bitte geben Sie Ihren Vor- und Nachnahmen ein</p>
+								</div>
+								<div class="form-group">
+									<label class="sr-only" for="user-phone">InputUserPhone</label>
+									<input type="tel" class="form-control" id="user-phone" aria-describedby="phoneHelp" placeholder="Telefon- bzw. Mobilnummer">
+									<p id="phoneHelp" class="sr-only">Bitte geben Sie Ihre Telefon- oder Mobilnummer ein</p>
+								</div>
+								<div class="form-group">
+									<label class="sr-only" for="user-email">InputUserEmail</label>
+									<input type="email" class="form-control" id="user-email" aria-describedby="emailHelp" placeholder="E-Mail-Adresse">
+									<p id="emailHelp" class="sr-only">Bitte geben Sie Ihre E-Mail-Adresse ein</p>
+								</div>
+								<div class="form-group">
+									<label class="sr-only" for="user-message">InputUserMessage</label>
+									<textarea class="form-control" id="user-message" aria-describedby="messageHelp" placeholder="Ihre Nachricht" rows="10"></textarea>
+									<p id="messageHelp" class="sr-only">Bitte geben Sie Ihre Nachricht ein</p>
+								</div>
 							</div>
-							<div class="col-6">
-								<p>test</p>
+							<!-- bootstrap modal / contact popup / google map -->
+							<div class="col-12 col-lg-6 strip-img04">
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- bootstrap modal / grundriss popup -->
+	<div class="modal fade popup" id="popup-floorplan" tabindex="-1" role="dialog" aria-labelledby="popup-floorplan-title" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title pl-4" id="popup-floorplan-title">Grundriss</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="close">
+						<span aria-hidden="true">&times;</span>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<img src="./images/mundschank-image01.png" class="image-popup-full" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- bootstrap modal / adaption popup -->
+	<div class="modal fade popup" id="popup-adaption" tabindex="-1" role="dialog" aria-labelledby="popup-adapation-title" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title pl-4" id="popup-adaption-title">Auf Sie zugeschnitten</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="close">
+						<span aria-hidden="true">&times;</span>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<p>Egal ob Sie eine Fachmesse, Mitarbeiterseminar, Produktpräsentation, Vertriebsveranstaltung oder Workshop planen, unsere Räumlichkeiten können rasch gemäß Ihrer Angaben adaptiert werden. <span>Wahlweise können Sie Ihr Unterfangen mit Ihrem Team oder von uns planen und umsetzen lassen. Ebenso stellen wir Ihnen auf Wunsch gerne weiteres Personal, Küchengeräte und -utensilien zur Verfügung.</span><span>Egal wie Sie sich entscheiden, wir sorgen dafür, dass Ihre Vorhaben ein voller Erfolg wird!</span></p>
+							</div>
+							<div class="col-12 col-lg-6 strip-img05">
+								<!-- DEBUG: for smaller viewports image incorrectly displayed  -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 

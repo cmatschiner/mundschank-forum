@@ -14,7 +14,9 @@ html {
 .header-main {
 	background: #D37C7C;
 	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-	top: 0px;
+	left: 0;
+	right: 0;
+	z-index: 1;
 }
 
 /* header / main / top bar */
@@ -25,7 +27,6 @@ html {
 }
 
 /* header / main / top bar / contact links */
-
 .links-contact a {
 	color: white;
 	font-size: 0.875rem;
@@ -38,6 +39,19 @@ html {
 .links-contact a:hover {
 	color: #414141;
 	text-decoration: none;
+}
+
+.links-contact button {
+	background: #DCDCDC;
+	color: #414141;
+	font-size: 0.875rem;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.links-contact button:hover {
+	background-color: #DCDCDC;
+	color: #D37C7C;
 }
 
 /* header / main / top bar / social links */
@@ -89,14 +103,15 @@ html {
 	color: #414141;
 }
 
-/* QUESTION: how can I highlight link that is currently activated? */
 .links-nav a:hover:last-child {
 	color: #414141;
 }
 
 /* header / sub */
 .header-sub {
-	background: url("../images/background01-blue.jpg") no-repeat fixed center top;
+	background: url("../images/placeholder-image01.jpg") no-repeat fixed center top;
+	padding-top: 120px;
+	/* QUESTION: Not an optimal solution to shift conatiner below header. Better solution? */
 }
 
 /* header / sub /subtitle */
@@ -182,7 +197,7 @@ html {
 	max-width: 40em;
 }
 
-.specs a {
+.specs button {
 	background-color: #DCDCDC;
 	border-width: 0;
 	border-radius: 25px;
@@ -191,7 +206,7 @@ html {
 	transition: all 0.3s linear 0s;
 }
 
-.specs a:hover {
+.specs button:hover {
 	background-color: #DCDCDC;
 	color: #D37C7C;
 }
@@ -219,19 +234,19 @@ html {
 }
 
 .strip-img01 {
-	background-image: url('../images/image01-wix.png');
+	background-image: url('../images/wix-image01.png');
 	background-size: cover;
 	background-position: 50% 50%;
 }
 
 .strip-img02 {
-	background-image: url('../images/image02-wix.png');
+	background-image: url('../images/wix-image02.png');
 	background-size: cover;
 	background-position: 50% 50%;
 }
 
 .strip-img03 {
-	background-image: url('../images/image03-wix.png');
+	background-image: url('../images/wix-image03.png');
 	background-size: cover;
 	background-position: 50% 50%;
 }
@@ -392,13 +407,67 @@ footer a:hover {
 	color: #D37C7C;
 }
 
-/* bootstrap modal */
-/* bootstrap modal / contact popup */
-.popup h4  {
-	border-color: white;
+/* bootstrap modal / general */
+.popup h4 {
 	color: #D37C7C;
 	font-size: 1.6rem;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+}
+
+.popup p {
+	color: #414141;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+.popup span {
+	display: block;
+	padding-top: 1.1rem;
+}
+
+/* bootstrap modal / contact popup */
+.popup input {
+	color: #414141;
+	font-size: 0.875rem;
+	font-weight: 400;
+}
+
+.popup textarea {
+	color: #414141;
+	font-size: 0.875rem;
+	font-weight: 400;
+	pb-0;
+}
+
+.popup button {
+	background-color: #D37C7C;
+	color: white;
+	font-size: 0.875rem;
+	font-weight: 400;
+}
+
+.popup button:hover {
+	background-color: #D37C7C;
+	color: #414141;
+}
+
+/* bootstrap modal / floorplan popup */
+.image-popup-full {
+	width: 100%;
+}
+
+.strip-img04 {
+	background-image: url('../images/google-image01.png');
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+/* bootstrap modal / adaption popup */
+.strip-img05 {
+	background-image: url('../images/wix-image11.png');
+	background-size: cover;
+	background-position: 50% 50%;
 }
