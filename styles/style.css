@@ -22,7 +22,6 @@ html {
 /* header / main / top bar */
 .bar-top {
 	align-items: center;
-	padding: .5rem 2rem 0.5rem 2rem;
 	justify-content: space-between;
 }
 
@@ -76,7 +75,6 @@ html {
 .bar-main {
 	align-items: flex-end;
 	justify-content: space-between;
-	padding: 0 2rem 1.5rem 2rem;
 }
 
 /* header / main / main bar / logo */
@@ -86,25 +84,7 @@ html {
 
 /* header / main / main bar / nav links */
 .links-nav a {
-	color: white;
 	font-size: 0.9375rem;
-	font-weight: 400;
-	padding: 0 .85rem;
-	text-decoration: none;
-	transition: all 0.3s linear 0s;
-}
-
-.links-nav a:hover {
-	color: #414141;
-	text-decoration: none;
-}
-
-.links-nav a:active {
-	color: #414141;
-}
-
-.links-nav a:hover:last-child {
-	color: #414141;
 }
 
 /* header / sub */
