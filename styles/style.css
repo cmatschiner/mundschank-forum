@@ -82,9 +82,14 @@ html {
 	height: 100px;
 }
 
-/* header / main / main bar / nav links */
-.links-nav a {
+.bar-main a {
+	color: white;
 	font-size: 0.9375rem;
+	transition: all 0.3s;
+}
+
+.bar-main a:hover {
+	color: #414141;
 }
 
 /* header / sub */
@@ -439,6 +444,22 @@ footer a:hover {
 	color: #414141;
 }
 
+/* footer */
+
+.bar-footer {
+	background-color: #D37C7C;
+}
+
+.bar-footer a {
+	color: white;
+	font-size: 0.875rem;
+	transition: all 0.3s;
+}
+
+.bar-footer a:hover {
+	color: #414141;
+}
+
 /* bootstrap modal / floorplan popup */
 .image-popup-full {
 	width: 100%;
@@ -455,8 +476,4 @@ footer a:hover {
 	background-image: url('../images/wix-image11.png');
 	background-size: cover;
 	background-position: 50% 50%;
-}
-
-footer {
-
 }
