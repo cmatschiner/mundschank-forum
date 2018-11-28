@@ -89,19 +89,25 @@ html {
 
 /* header / sub */
 .header-sub {
-	background: url("../images/placeholder-image01.jpg") no-repeat fixed center top;
-	padding-top: 120px;
-	/* QUESTION: Not an optimal solution to shift conatiner below header. Better solution? */
+	padding-top: 155px;
+}
+
+.header-sub video {
+	position: fixed;
+	top: 120px;
+	left: 0;
+	min-width: 100%;
+	z-index: -1;
 }
 
 /* header / sub /subtitle */
 .subtitle h2 {
 	color: white;
-	font-size: 5.5rem;
+	font-size: 4rem;
 	font-weight: 700;
 	letter-spacing: 9px;
-	padding-top: 4rem;
-	padding-bottom: 2rem;
+	line-height: 6rem;
+	padding-top: 1.5rem;
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 	text-transform: uppercase;
 }
@@ -110,33 +116,33 @@ html {
 	color: #D37C7C;
 	display: inline-block;
 	font-family: 'Leckerli One', cursive;
-	font-size: 9rem;
-	padding: 0 3rem 0 3rem;
+	font-size: 7rem;
+	padding-left: 1.5rem;
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-.subtitle h3 {
-	color: white;
-	font-size: 3.2rem;
-	font-weight: 700;
-	letter-spacing: 14px;
-	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-	text-transform: uppercase;
+.subtitle h2:after {
+	content: "für Gastro-Experten";
+	display: block;
+	font-size: 2.5rem;
 }
 
 /* header / sub / slideshow */
 .slideshow {
-	font-size: 1.75rem;
-	font-weight: 400;
-	letter-spacing: 1px;
+	font-size: 1.5rem;
+	font-weight: 300;
+	letter-spacing: 2px;
 	text-align: center;
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 /* main page */
+
+main {
+	background-color: white;
+}
 /* main page / specs */
 .specs {
-	background-color: white;
 	padding-bottom: 2rem;
 }
 
@@ -193,8 +199,8 @@ html {
 
 /* main page / strip: quote 1 */
 .strip-quote {
-	background-color: black;
-	color: #DCDCDC;
+	background-color: #212121;
+	color: white;
 	text-align: center;
 }
 
@@ -202,7 +208,7 @@ html {
 	font-family: 'Noticia Text', serif;
 	font-size: 1.125rem;
 	font-style: italic;
-	font-weight: 400;
+	font-weight: 200;
 	line-height: 1.6;
 }
 
@@ -238,7 +244,6 @@ html {
 
 /* main page / services */
 .services {
-	background-color: white;
 	padding: 2rem 0 0 0;
 	position: relative;
 }
@@ -450,4 +455,8 @@ footer a:hover {
 	background-image: url('../images/wix-image11.png');
 	background-size: cover;
 	background-position: 50% 50%;
+}
+
+footer {
+
 }
